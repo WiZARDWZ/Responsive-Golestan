@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Iransans;
+}
+@font-face {
+  font-family: Iransans;
+  src: url("../Fonts/IRANSansX-Medium.woff") format("Iransans");
+}
+body {
+  background-color: #94979a !important;
+}
+.btn-white {
+  background-color: rgba(255, 255, 255, 0.589) !important;
+}
+.navbar {
+  height: 100px;
+}
+.navbar > div.container-fluid > a {
+  position: relative;
+  top: 50px;
+}
+.navbar-nav {
+  position: relative;
+}
+
+.main-slide {
+  padding-top: 170px;
+}
+.main-slide {
+  background: linear-gradient(#fbfbfb, #d2d2d2);
+}
+div.product-img {
+  padding-right: 130px;
+}
+div.Text-introduceing {
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+div.Text-introduceing > h5 {
+  padding-bottom: 20px;
+  color: red;
+}
+div.Text-introduceing > p {
+  line-height: 26px;
+  text-align: justify;
+  padding-bottom: 20px;
+}
+div.product-int {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+div.boxes {
+  line-height: 35px;
+  border-bottom: 1px solid #94979a8f;
+}
+.img-1 {
+  height: 500px;
+  max-width: 1400px;
+  background-image: url("../Media/image2-new.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+  position: relative;
+}
+.img-2 {
+  height: 500px;
+  max-width: 1400px;
+  background-image: url("../Media/image3-new.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+  position: relative;
+}
+.img-3 {
+  height: 500px;
+  max-width: 1400px;
+  background-image: url("../Media/image4-new.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+  position: relative;
+}
+div.title {
+  width: 220px;
+  height: 90px;
+  padding-top: 10px;
+  background-color: red;
+  line-height: 30px;
+  position: absolute;
+  left: 74%;
+  top: 91%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+div.line {
+  height: 30px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin-right: -12px;
+  background-color: aqua;
+}
+div.paralax {
+  height: 400px;
+  background-image: url("../Media/recipe-baner-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+.text- {
+  height: 70px;
+  background-color: rgb(255, 255, 255);
+  font-size: 24px;
+  line-height: 70px;
+}
