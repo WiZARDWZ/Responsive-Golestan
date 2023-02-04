@@ -10,22 +10,36 @@
       rel="stylesheet"
       href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
     />
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-    <source src="./node_modules/bootstrap/dist/js/bootstrap.min.js" type="" />
+    <source
+      src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+      type=""
+    />
     <source
       src="./node_modules/@fortawesome/fontawesome-free/js/all.min.js"
-      type=""
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
     />
   </head>
   <body dir="rtl">
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand d-none" href="#">
           <img src="./Media/golestan-logo.png" alt="" srcset=""
         /></a>
         <button
@@ -40,18 +54,53 @@
           class="justify-content-center navbar-collapse"
           id="collapsibleNavbar"
         >
-          <ul class="navbar-nav">
+          <ul class="navbar-nav bg-dark text-center">
+            <li class="nav-item">
+              <a class="navbar-brand" href="#">
+                <img src="./Media/golestan-logo.png" alt="" srcset=""
+              /></a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#">صفحه اصلی</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">شرکت گلستان</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                >شرکت گلستان</a
+              >
+              <ul class="dropdown-menu bg-dark">
+                <li><a class="dropdown-item text-white" href="#">Link</a></li>
+                <li>
+                  <a class="dropdown-item text-white" href="#">Another link</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-white" href="#">A third link</a>
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">محصولات</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">وبلاگ</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                >وبلاگ</a
+              >
+              <ul class="dropdown-menu bg-dark text-white">
+                <li><a class="dropdown-item text-white" href="#">Link</a></li>
+                <li>
+                  <a class="dropdown-item text-white" href="#">Another link</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-white" href="#">A third link</a>
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">قرعه کشی</a>
@@ -59,11 +108,26 @@
             <li class="nav-item">
               <a class="nav-link" href="#">استخدام</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">تماس با ما</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                >تماس با ما</a
+              >
+              <ul class="dropdown-menu bg-dark">
+                <li><a class="dropdown-item text-white" href="#">Link</a></li>
+                <li>
+                  <a class="dropdown-item text-white" href="#">Another link</a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-white" href="#">A third link</a>
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">EN</a>
+              <a class="nav-link border-0" href="#">EN</a>
             </li>
           </ul>
         </div>
@@ -83,7 +147,7 @@
               srcset=""
             />
           </div>
-          <div class="text col-md-6">
+          <div class="text col-md-6 mb-3">
             <h2 class="text-primary">چای گلستان</h2>
             <strong>حرفه ای در طعم</strong>
             <br /><br />
@@ -108,7 +172,7 @@
         <div class="row">
           <div class="col-md-2"></div>
           <div class="col-md-8 mt-4">
-            <h5>معرفی گلستان</h5>
+            <h5 class="text-red">معرفی گلستان</h5>
             <p>
               آنچه که امروز با نام مجموعه گلستان می‌شناسیم در سال 1329 بنیان
               نهاده شد. زمانی که شرکت گلستان فعالیت خود را با بسته‌بندی و توزیع
@@ -122,7 +186,7 @@
               بازاریابی و مشتری محوری از جمله عوامل مهم در استراتژی شرکت گلستان
               می باشد.
             </p>
-            <h5>محصولات گلستان</h5>
+            <h5 class="text-red">محصولات گلستان</h5>
             <p>
               نام تجاری گلستان قدمتی به اندازه عمر شرکت گلستان دارد. گلستان
               ممتاز ترین محصولات خود را با این نام تجاری عرضه می کند . مصرف
@@ -131,7 +195,7 @@
               تجاری حمایت می کنند.
             </p>
 
-            <div class="product-int text-center d-md-none d-sm-none d-lg-flex">
+            <div class="product-int text-center d-none d-xl-flex d-xxl-flex">
               <div class="boxes">
                 <img src="./Media/statistics-icon-1.png" alt="" srcset="" />
                 مشتریان گلستان
@@ -154,7 +218,7 @@
           <!-- img 12 col Start -->
           <div class="col-12 img-1">
             <div class="title text-center">
-              <strong>چای گلستان</strong>
+              <strong class="h4">چای گلستان</strong>
               <p>معرفی محصول</p>
             </div>
             <div class="line"></div>
@@ -162,8 +226,8 @@
           <!-- img 2 col End -->
           <br />
           <div class="col-md-2"></div>
-          <div class="col-md-8">
-            <h3>رکن اول غذای ایرانی</h3>
+          <div class="col-md-8 mt-4 mb-4">
+            <h3 class="text-red">رکن اول غذای ایرانی</h3>
             <p>
               مرغوب‌ترین برنج دنیا، برنج ایران است و بهترین نوع برنج ایرانی،‌
               طارم و هاشمی. این برنج‌ها از بهترین شالیزارهای مازندران برداشت
@@ -184,7 +248,7 @@
           <!-- img start -->
           <div class="col-12 img-2">
             <div class="title text-center">
-              <strong>چای گلستان</strong>
+              <strong class="h4">چای گلستان</strong>
               <p>معرفی محصول</p>
             </div>
             <div class="line"></div>
@@ -192,8 +256,8 @@
           <!-- img end -->
           <br />
           <div class="col-2"></div>
-          <div class="col-md-8">
-            <h3>سابقه ای به قدمت یک عمر</h3>
+          <div class="col-md-8 mt-4 mb-4">
+            <h3 class="text-red">سابقه ای به قدمت یک عمر</h3>
             <p>
               چای تنها یك نوشیدنی گرم نیست.‌ یك گفتمان است؛‌ گرمابخش وجود و
               بهانه‌ای برای آغاز یك معاشرت دل‌چسب. بی‌دلیل نیست كه نام
@@ -215,15 +279,15 @@
           <!-- img 12 col start -->
           <div class="col-12 img-3">
             <div class="title text-center">
-              <strong>چای گلستان</strong>
+              <strong class="h4">چای گلستان</strong>
               <p>معرفی محصول</p>
             </div>
             <div class="line"></div>
           </div>
           <!-- img 12 col End -->
           <div class="col-md-2"></div>
-          <div class="col-md-8">
-            <h3>رکن اول غذای ایرانی</h3>
+          <div class="col-md-8 mt-4 mb-4">
+            <h3 class="text-red">رکن اول غذای ایرانی</h3>
             <p>
               مرغوب‌ترین برنج دنیا، برنج ایران است و بهترین نوع برنج ایرانی،‌
               طارم و هاشمی. این برنج‌ها از بهترین شالیزارهای مازندران برداشت
@@ -245,14 +309,244 @@
           <div class="col-1"></div>
           <div class="col-10 text-">
             <p>
-              <b>آشپزخانه گلستان</b>/ دستور پخت انواع غذاهای لذيذ / ميزبانی /
-              ديزاين
+              <b class="text-red h5">آشپزخانه گلستان</b>/ دستور پخت انواع غذاهای
+              لذيذ / ميزبانی / ديزاين
             </p>
           </div>
-        </div>
-        <!-- end paralax -->
+          <!-- end paralax -->
+          <!-- start foods -->
+          <div class="main">
+            <div class="col-3"></div>
+            <div class="col-6 d-flex justify-content-around">
+              <div class="boxes">
+                <img
+                  class="img-fluid"
+                  src="./Media/recipe-pic1.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div>
+                  <p class="text-red h5">استیک با سس قارچ</p>
+                  <p>
+                    استیک را باید در تابه چدنی سرخ کرده و در هر نوبت یک استیک را
+                    در تابه قرار داد. قطعات گوشت را کمی می کوبیم. دو طرف هر قطعه
+                    را به نمک و فلفل آغشته می کنیم...
+                  </p>
+                  <button type="button" class="btn btn-outline-danger">
+                    اطلاعات بیشتر
+                  </button>
+                </div>
+              </div>
+              <div class="boxes">
+                <img
+                  class="img-fluid"
+                  src="./Media/recipe-pic2.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div>
+                  <p class="text-red h5">ماکارونی با سبزیجات</p>
+                  <p>
+                    ابتدا ماکارانی‌ها را در ظرفی‌ به‌ همراه‌ آب‌، روغن‌ مایع‌ و
+                    نمک‌ می‌ریزیم‌ تا کمی‌ بپزد. در این‌ حین‌ پیازها را خرد
+                    کرده‌ و روی‌ روغن‌ تفت‌ می‌دهیم‌ تا طلایی‌ شود...
+                  </p>
+                  <button type="button" class="btn btn-outline-danger">
+                    اطلاعات بیشتر
+                  </button>
+                </div>
+              </div>
+              <div
+                class="boxes d-none d-xl-block d-lg-block d-md-block d-xxl-block"
+              >
+                <img
+                  class="img-fluid"
+                  src="./Media/recipe-pic3.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <div>
+                  <p class="text-red h5">سوپ مکزیکی</p>
+                  <p>
+                    گوشت بوقلمون را در یک ماهیتابه بزرگ ریخته، آب روی آن بریزید
+                    تا روی آن را بپوشاند و به مدت نیم ساعت آن را بپزید. گوشت را
+                    از مایع آن بیرون آورده…
+                  </p>
+                  <button type="button" class="btn btn-outline-danger">
+                    اطلاعات بیشتر
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end foods -->
+          <!-- start video -->
+          <div class="main-video">
+            <div class="col-3"></div>
+            <div class="col-6 d-flex justify-content-around">
+              <div
+                class="boxes d-none d-xl-block d-lg-block d-md-block d-xxl-block"
+              >
+                <div class="video" id="11435706700">
+                  <script
+                    type="text/JavaScript"
+                    src="https://www.aparat.com/embed/cQ0yF?data[rnddiv]=11435706700&data[responsive]=yes&titleShow=true"
+                  ></script>
+                </div>
+                <div>
+                  <p class="text-red h5">سالاد نودل</p>
+                  <p>
+                    نودل هاتی کارا یك میان‌وعده‌ی مغذی، در هر موقعیتی كه باشید
+                    با كمی آب جوش و یك نودل هاتی‌كارا می‌توانید از یك غذای سالم
+                    و خوشمزه لذت ببرید.
+                  </p>
+                  <button type="button" class="btn btn-outline-danger">
+                    اطلاعات بیشتر
+                  </button>
+                </div>
+              </div>
+              <div class="boxes">
+                <div class="video" id="39402258396">
+                  <script
+                    type="text/JavaScript"
+                    src="https://www.aparat.com/embed/Ysaot?data[rnddiv]=39402258396&data[responsive]=yes&titleShow=true"
+                  ></script>
+                </div>
+                <div>
+                  <p class="text-red h5">اینستاگرام هاتی نودل</p>
+                  <p>
+                    نودل‌های هاتی كارا را می‌توان جایگزین سالمی برای غذاهای
+                    فست‌فودی دانست. طعم عالی،‌ ارزش غذایی بالا و قیمت مناسب از
+                    این محصول غذای سالم و كاملی ساخته است.
+                  </p>
+                  <button type="button" class="btn btn-outline-danger">
+                    اطلاعات بیشتر
+                  </button>
+                </div>
+              </div>
+              <div class="boxes">
+                <div class="video" id="41188052617">
+                  <script
+                    type="text/JavaScript"
+                    src="https://www.aparat.com/embed/Mwp4H?data[rnddiv]=41188052617&data[responsive]=yes&titleShow=true"
+                  ></script>
+                </div>
+                <div>
+                  <p class="text-red h5">برنج گلستان</p>
+                  <p>
+                    عطر و طعم بی‌نظیر برنج گلستان با هیچ برنج دیگری قابل مقایسه
+                    نیست. با گلستان،‌ كیفیت زندگی بالاتر از همیشه است. چرا كه
+                    مشتریان گلستان؛‌ لایق بهترین ها هستند.
+                  </p>
+                  <button type="button" class="btn btn-outline-danger">
+                    اطلاعات بیشتر
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End video -->
+          <!-- start resposiblity -->
+          <div class="crs-back col-12 text-center">
+            <p class="text-white h4">مسئوليت های اجتماعی شركت گلستان</p>
+            <div class="line1"></div>
+            <p class="text-info h5 pt-1">Golestan Social Responsibility</p>
+            <p class="text-secondary h6 pt-1">Mahdi Hospital</p>
+            <img class="img-thumbnail" src="./Media/csr-pic1.jpg" alt="" />
+            <div class="line"></div>
+          </div>
 
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+          <!-- End resposiblity -->
+          <!-- start resposiblity description -->
+          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <h3 class="text-red">مسئوليت های اجتماعی گلستان</h3>
+            <p>
+              كسب‌وكارها اجزای قدرتمند جامعه به شمار می‌آیند و موفق‌ترین،
+              قابل‌احترام‌ترین و مطلوب‌ترین كسب‌وكارها آنهایی هستند كه كاری
+              فراتر از درآمدزایی ایجاد كنند؛‌ آنهایی كه آمده‌اند تا از تجربه و
+              امکانات شان برای حل مشكلات جامعه و محیط زندگی خود استفاده كنند.
+              گلستان در فعالیت‌های‌ اجتماعی خود،‌ گسترده وسیعی از فعالیت‌های
+              عام‌المنفعه را در دستوركار خود قرار داده است.
+            </p>
+            <button type="button" class="btn btn-outline-danger">
+              اطلاعات بیشتر
+            </button>
+          </div>
+
+          <!-- end resposiblity description -->
+          <!-- start social media links -->
+          <div
+            class="col-12 d-flex justify-content-center bg-dark mt-4 p-2 social-media"
+          >
+            <div>
+              <a href=""><img src="./Media/icon1-1.png" alt="" /></a>
+            </div>
+            <div>
+              <a href=""><img src="./Media/icon2-1.png" alt="" /></a>
+            </div>
+            <div>
+              <a href=""><img src="./Media/icon3-1.png" alt="" /></a>
+            </div>
+            <div>
+              <a href=""><img src="./Media/icon4-1.png" alt="" /></a>
+            </div>
+            <div>
+              <a href=""><img src="./Media/icon5-1.png" alt="" /></a>
+            </div>
+            <div>
+              <a href=""><img src="./Media/icon6-1.png" alt="" /></a>
+            </div>
+          </div>
+          <div class="col-12 bg-danger"></div>
+          <!-- end social media links -->
+          <!-- start footer -->
+          <div class="main-footer">
+            <div
+              class="col-8 d-flex justify-content-around align-items-center m-auto"
+            >
+              <div>
+                <img src="./Media/footer-icon1.png" alt="" srcset="" />
+                <p>جای گاستان</p>
+                <a href="">چای ممتاز هندوستان</a>
+                <a href="">چای ممتاز ارل گری</a>
+                <a href="">چای سيلان عطری</a>
+                <a href="">چای ممتاز سيلان</a>
+                <a href="">چای صبحانه گلستان</a>
+              </div>
+              <div>
+                <img src="./Media/footer-icon4.png" alt="" srcset="" />
+                <p>تی بگ گلستان</p>
+                <a href="">تی بگ بلک لاين</a>
+                <a href="">تی بگ ارل گری</a>
+                <a href="">دمنوش نعناع</a>
+                <a href="">دمنوش بابونه</a>
+                <a href="">دمنوش چای سبز</a>
+              </div>
+              <div>
+                <img src="./Media/footer-icon3.png" alt="" srcset="" />
+                <p>ادويه گلستان</p>
+                <a href="">دمنوش چای سبز</a>
+                <a href="">ادويه كاری</a>
+                <a href="">ادویه ماست و خیار</a>
+                <a href="">فلفل سياه خالص</a>
+                <a href="">زردچوبه ممتاز</a>
+              </div>
+              <div>
+                <img src="./Media/footer-icon2.png" alt="" srcset="" />
+                <p>حبوبات گلستان</p>
+                <a href="">لوبيا قرمز ممتاز</a>
+                <a href="">لوبيا چيتی گلستان</a>
+                <a href="">نخود زودپز كرمانشاه</a>
+                <a href="">عدس كانادايی</a>
+                <a href="">لوبيا سفيد گلستان</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- end footer -->
+        </div>
       </div>
     </section>
 
